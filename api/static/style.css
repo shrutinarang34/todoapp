@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+  }
+.nav-color{
+    background-color: #A2A29F;
+}
+.Logo{
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+}
+
+.todo{
+    color: black;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.nav-item{
+    color: black;
+    margin-right: 10px;
+   
+    font-weight: 500;
+}
+.nav-item:hover{
+    text-decoration: underline;
+}
+.foot{
+    background-color: #262626;
+    color: white;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }

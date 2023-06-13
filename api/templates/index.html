@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block body %}
+<div>
+
+        <!-- form  -->
+
+<div class="container my-4">
+  <h3>Add a TODO</h3>
+  <form action = "/todo" method = "POST">
+  <div class="mb-3">
+    <label for="title"  class="form-label">Title</label>
+    <input type="text" class="form-control mb-3" id="title" name="Title" aria-describedby="emailHelp">
+  <div class="mb-3">
+    <label for="desc" class="form-label">Description</label>
+    <input type="text" name="Description" class="form-control" id="desc">
+  </div>
+  <button type="submit" class="btn btn-dark">ADD</button>
+</form>
+</div>
+
+<!-- table  -->
+<div class="container my-4">
+  <h3>Your TODOs</h3>
+  
+      {% if data|length==0 %}
+      <div class="alert alert-dark" role="alert">
+        Nothing TO DO. Please add a TODO!      </div>
+        
+       {% else %}
+       <table border="2px solid black" class="table  table-striped" >
+        <thead>
+          <tr class="table table-dark table-active">
+            <th scope="col">SNO</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Date_created</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+      {% for row in data %}
+      <tr>
+        <td>{{loop.index}}</td>
+          <td>{{ row['Title'] }}</td>
+          <td>{{ row['Description'] }}</td>
+          <td>{{ row['Date_created'] }}</td>
+          <td>
+        
+            <a href="{{ url_for('update', SNO=row['SNO']) }}" type="button" class="btn btn-outline-dark btn-sm mx-1">Update</a>
+            <a href="{{ url_for('delete', SNO=row['SNO']) }}" type="button" class="btn btn-outline-dark btn-sm mx-1">Delete</a>
+
+            </td>
+      </tr>
+      {% endfor %}
+      {% endif %}
+    </tbody>
+  </table>
+</div>
+</div>
+{% endblock body %}

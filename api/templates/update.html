@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+        <!-- form  -->
+<div class="container my-4">
+  <h3>Update TODO</h3>
+  <form action = "{{ url_for('update',SNO=SNO) }}" method = "post">
+  <div class="mb-3">
+    <label for="title"  class="form-label">Title</label>
+    <input type="text" class="form-control mb-3" id="title" value="{{todo.title}}" name="Title" aria-describedby="emailHelp">
+  <div class="mb-3">
+    <label for="desc" class="form-label">Description</label>
+    <input type="text" name="Description" class="form-control" value="{{todo.description}}" id="desc">
+  </div>
+  <button type="submit" class="btn btn-dark">Update</button>
+</form>
+</div>
+
+
+ 
+{% endblock body %}

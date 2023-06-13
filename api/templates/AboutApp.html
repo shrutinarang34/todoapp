@@ -1,0 +1,104 @@
+{% extends 'base.html' %} {% block body %}
+
+<p class="h2 pt-4 text-center">About TODO APP</p>
+<div class="container pt-4 mt-xl-5">
+  <div class="row">
+    <div class="col-md-6">
+      <samp style="font-size: 17px;">
+        Welcome to the TODO App! This application helps you stay organized by
+        managing your daily tasks. It provides complete CRUD (Create, Read,
+        Update, Delete) functionality to help you keep track of your to-do list
+        effectively.
+      </samp>
+      <p class="h2 pt-4">Features</p>
+      <ol class="list-group list-group-numbered pt-4 mb-4">
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Create:</div>
+            Add new tasks to your to-do list by entering a title and description
+            for each task. You can set a due date and assign a priority level to
+            ensure better organization.
+          </div>
+          
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Read:</div>
+            View all your tasks in a clean and intuitive interface. Each task
+            will display its title, description, due date, and priority level.
+            You can easily scan through your tasks to see what needs to be done.
+          </div>
+          
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Update:</div>
+            Modify existing tasks whenever needed. You have the flexibility to
+            edit the title, description, due date, and priority level of any
+            task. Update tasks to reflect changes or new information as your
+            plans evolve.
+          </div>
+          
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Update:</div>
+            Modify existing tasks whenever needed. You have the flexibility to
+            edit the title, description, due date, and priority level of any
+            task. Update tasks to reflect changes or new information as your
+            plans evolve.
+          </div>
+          
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Delete:</div>
+            Remove completed or unnecessary tasks from your list. Deleting tasks
+            helps you declutter and focus on the most important items. Be
+            cautious while deleting tasks, as this action cannot be undone.
+          </div>
+          
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Search:</div>
+            Quickly find specific tasks by using the search feature. Enter
+            keywords or phrases related to the task, and the app will display
+            matching results, making it easier to locate specific items in your
+            to-do list.
+          </div>
+          
+        </li>
+      </ol>
+    
+    </div>
+    <div class="col-md-6">
+      <img
+        src="{{url_for('static',filename='Arrowai.png')}}"
+        width="350"
+        height="350"
+        class="rounded float-end"
+        alt="..."
+      />
+    </div>
+  </div>
+  <samp class="pt-4" style="font-size: 17px;"
+  >Streamline your productivity and conquer your tasks effortlessly with
+  the TODO Web App. Experience seamless organization and take control of
+  your to-do list today!</samp
+>
+</div>
+
+{% endblock body %}
