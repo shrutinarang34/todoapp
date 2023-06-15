@@ -1,0 +1,19 @@
+{
+    "name": "todoapp",
+    "version": "1.0.0",
+    "description": "A simple todo application that allows users to manage their tasks efficiently. ",
+    "scripts": {
+      "start": "python app.py"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/shrutinarang34/todoapp.git"
+    },
+    "author": "Your Name",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/shrutinarang34/todoapp/issues"
+    },
+    "homepage": "https://github.com/shrutinarang34/todoapp#readme"
+  }
+  
